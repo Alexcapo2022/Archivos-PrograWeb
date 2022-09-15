@@ -1,0 +1,28 @@
+/*div {
+    background-color: red;
+}*/
+#nombre_curso {
+    background-color: red;
+    font-family: 'Noto Serif', serif;
+    font-size: 3cm;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 3px solid;
+
+}
+#nombre_carrera{
+    background-color: green;
+    font-size: smaller;
+    
+}
+
+.grupo1 {
+    font-size: x-large;
+}
+a:visited{
+   color: brown;
+
+}
