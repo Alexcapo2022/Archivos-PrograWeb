@@ -1,9 +1,58 @@
 .casilla{
-    height: 100px;
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 80px;
+    width: 80px;
     font-size: 30px;
+    color:black;
+    font-weight: bold;
     
+}
+body{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    font-family:sans-serif;
+    color: white;
+    
+}
+main{
+    width:730px;
+    /*border:1px solid black;-------> sirver para ver las secciones*/
+    margin:30px auto;
+    display:flex;
+    align-items: center;
+    
+
+}
+h1{
+    text-align: center;
+}
+h2{
+    font-size: 20px;
+}
+.section1{
+    background-color: rgba(252,255,255,0.2);
+    padding: 0 10px 10px 10px;
+}
+
+.section2{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    width: 260px;   /*ancho*/
+    height: 400px; /*altura*/
+    padding:0 20px;
+    
+    
+}
+.estadisticas{
+    border: 1px solid white;
+    height: 110px;
+    border-radius: 8px;
+    padding: 8px 20px;
+    box-sizing: border-box;
+}
+footer{
+    text-align: center;
+}
+a{
+    text-decoration: none;
 }

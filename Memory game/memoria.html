@@ -1,156 +1,175 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-        <link href="./memoria.css" rel="stylesheet" />
-        
-        <body class = "container">
-            <h1 id="titulo">Memoria Game</h1>
-            <div class="row mb-4">
-                <div class="col">
-                        <button  id="0_0" onclick="casillaOnClick(0,0)" class="bg-warning casilla">
-                            &#129409;
-                        </button>
-                    </div>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <link href="./memoria.css" rel="stylesheet" />
+
+<body class="container">
+    <main>
+        <section class="section1">
+    <h1 id="titulo">Memoria Game</h1>
+    <div class="row mb-4">
+        <div class="col">
+            <button id="0" onclick="destapar(0)" class="bg-warning casilla">
                 
-                <div class="col">
-                    <button id="0_1" onclick="casillaOnClick(0,1)" class="bg-warning casilla">
-                        &#129409;
-                    </button>
-                </div>
-            
-                    <div class="col">
-                        <button id="0_2" onclick="casillaOnClick(0,2)" class="bg-warning casilla">
-                            &#129409;
-                        </button>
-                    </div>
-                    <div class="col">
-                            <button id="0_3" onclick="casillaOnClick(0,3)" class="bg-warning casilla">
-                                &#129409;
-                            </button>
-                        </div>
-        </div>
-        <div class="row mb-4">
-            <div class="col">
-                    <button id="1_0" onclick="casillaOnClick(1,0)"class="bg-warning casilla">
-                        &#129409;
-                    </button>
-                </div>
-            
-            <div class="col">
-                <button id="1_1" onclick="casillaOnClick(1,1)" class="bg-warning casilla">
-                    &#129409;
-                </button>
-            </div>
-        
-                <div class="col">
-                    <button id="1_2" onclick="casillaOnClick(1,2)" class="bg-warning casilla">
-                        &#129409;
-                    </button>
-                </div>
-                <div class="col">
-                        <button id="1_3" onclick="casillaOnClick(1,3)"class="bg-warning casilla">
-                            &#129409;
-                        </button>
-                    </div>
-        </div> 
-        <div class="row mb-4">
-        <div class="col">
-                <button id="2_0" onclick="casillaOnClick(2,0)" class="bg-warning casilla">
-                    &#129409;
-                </button>
-            </div>
-        
-        <div class="col">
-            <button id="2_1" onclick="casillaOnClick(2,1)" class="bg-warning casilla">
-                &#129409;
             </button>
         </div>
-    
-            <div class="col">
-                <button id="2_2" onclick="casillaOnClick(2,2)" class="bg-warning casilla">
-                    &#129409;
-                </button>
-            </div>
-            <div class="col">
-                    <button id="2_3" onclick="casillaOnClick(2,3)" class="bg-warning casilla">
-                        &#129409;
-                    </button>
-                </div>
-        </div> 
-        <div class="row mb-4">
-    <div class="col">
-            <button id="3_0" onclick="casillaOnClick(3,0)" class="bg-warning casilla">
-                &#129409;
-            </button>
-        </div>
-    
-    <div class="col">
-        <button id="3_1" onclick="casillaOnClick(3,1)" class="bg-warning casilla">
-            &#129409;
-        </button>
-    </div>
 
         <div class="col">
-            <button  id="3_2" onclick="casillaOnClick(3,2)" class="bg-warning casilla">
-                &#129409;
+            <button id="1" onclick="destapar(1)" class="bg-warning casilla">
+                
             </button>
         </div>
-        <div class="col">
-                <button id="3_3" onclick="casillaOnClick(3,3)" class="bg-warning casilla">
-                    &#129409;
-                </button>
-            </div>
-        </div> 
-        <div class="row mb-4">
-    <div class="col">
-            <button id="4_0" onclick="casillaOnClick(4,0)" class="bg-warning casilla">
-                &#129409;
-            </button>
-        </div>
-    
-    <div class="col">
-        <button id="4_1" onclick="casillaOnClick(4,1)" class="bg-warning casilla">
-            &#129409;
-        </button>
-    </div>
 
         <div class="col">
-            <button id="4_2" onclick="casillaOnClick(4,2)" class="bg-warning casilla">
-                &#129409;
+            <button id="2" onclick="destapar(2)" class="bg-warning casilla">
+                
             </button>
         </div>
         <div class="col">
-                <button id="4_3" onclick="casillaOnClick(4,3)" class="bg-warning casilla">
-                    &#129409;
-                </button>
-            </div>
-        </div> 
-        <div class="row mb-4">
-    <div class="col">
-            <button id="5_0" onclick="casillaOnClick(5,0)" class="bg-warning casilla">
-                &#129409;
+            <button id="3" onclick="destapar(3)" class="bg-warning casilla">
+                
             </button>
         </div>
-    
-    <div class="col">
-        <button id="5_1" onclick="casillaOnClick(5,1)" class="bg-warning casilla">
-            &#129409;
-        </button>
     </div>
+    <div class="row mb-4">
+        <div class="col">
+            <button id="4" onclick="destapar(4)" class="bg-warning casilla">
+                
+            </button>
+        </div>
 
         <div class="col">
-            <button id="5_2" onclick="casillaOnClick(5,2)" class="bg-warning casilla">
-                &#129409;
+            <button id="5" onclick="destapar(5)" class="bg-warning casilla">
+                
+            </button>
+        </div>
+
+        <div class="col">
+            <button id="6" onclick="destapar(6)" class="bg-warning casilla">
+                
             </button>
         </div>
         <div class="col">
-                <button id="5_3" onclick="casillaOnClick(5,3)" class="bg-warning casilla">
-                    &#129409;
-                </button>
-                </div>
-            </div>
-            <script src="./memoria.js"></script> 
-        </body><!--comentarios -->
+            <button id="7" onclick="destapar(7)" class="bg-warning casilla">
+                
+            </button>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col">
+            <button id="8" onclick="destapar(8)" class="bg-warning casilla">
+                
+            </button>
+        </div>
+
+        <div class="col">
+            <button id="9" onclick="destapar(9)" class="bg-warning casilla">
+                
+            </button>
+        </div>
+
+        <div class="col">
+            <button id="10" onclick="destapar(10)" class="bg-warning casilla">
+                
+            </button>
+        </div>
+        <div class="col">
+            <button id="11" onclick="destapar(11)" class="bg-warning casilla">
+                
+            </button>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col">
+            <button id="12" onclick="destapar(12)" class="bg-warning casilla">
+                
+            </button>
+        </div>
+
+        <div class="col">
+            <button id="13" onclick="destapar(13)" class="bg-warning casilla">
+                
+            </button>
+        </div>
+
+        <div class="col">
+            <button id="14" onclick="destapar(14)" class="bg-warning casilla">
+                
+            </button>
+        </div>
+        <div class="col">
+            <button id="15" onclick="destapar(15)" class="bg-warning casilla">
+               
+            </button>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col">
+            <button id="16" onclick="destapar(16)" class="bg-warning casilla">
+                
+            </button>
+        </div>
+
+        <div class="col">
+            <button id="17" onclick="destapar(17)" class="bg-warning casilla">
+               
+            </button>
+        </div>
+
+        <div class="col">
+            <button id="18" onclick="destapar(18)" class="bg-warning casilla">
+                
+            </button>
+        </div>
+        <div class="col">
+            <button id="19" onclick="destapar(19)" class="bg-warning casilla">
+                
+            </button>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col">
+            <button id="20" onclick="destapar(20)" class="bg-warning casilla">
+                
+            </button>
+        </div>
+
+        <div class="col">
+            <button id="21" onclick="destapar(21)" class="bg-warning casilla">
+                
+            </button>
+        </div>
+
+        <div class="col">
+            <button id="22" onclick="destapar(22)" class="bg-warning casilla">
+                
+            </button>
+        </div>
+        <div class="col">
+            <button id="23" onclick="destapar(23)" class="bg-warning casilla">
+                
+            </button>
+        </div>
+    </div>
+    
+</section>
+<section class="section2">
+    <h2 id="aciertos" class="estadisticas">Aciertos: 0</h2>
+    <h2 id="t-restante" class="estadisticas">Tiempo: 60 segundos</h2>
+    <h2 id="movimientos"class="estadisticas">Movimientos: 0 </h2>
+</section>
+</main>
+<footer>
+    <p>Juego programado por 👉 Alexander Cruz</p>
+</footer>
+<script src="./memoria.js"></script>
+</body>
+<!--comentarios -->
+
 </html>
