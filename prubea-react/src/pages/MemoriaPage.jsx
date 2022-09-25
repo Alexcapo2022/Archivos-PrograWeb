@@ -1,10 +1,14 @@
 import Board from "../components/Board"
 import Header from "../components/Header"
+import createBoard from "../models/board"
+
 
 const MemoriaPage =() => {
-    return <div>
+    const board = createBoard(5,2)
+
+    return <div className="container">
         <Header />
-        <Board numRows={ 6 } numCols={ 4 }/>
+        <Board numRows={ 5 } numCols={ 2 } boardData={board}/>
     </div>
 }
 export default MemoriaPage
