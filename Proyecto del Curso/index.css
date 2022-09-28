@@ -18,7 +18,7 @@ body{
     margin  :0;
     
 }
-button{
+.index_button{
     font-size: 1.5em;
     font-weight: bold;
     margin:10px 10px 10px 10px;
@@ -35,7 +35,7 @@ button:hover{
     background-color: #018ABE;
 }
 
-.container{
+.container_index{
     max-width: 1400px;
     margin:auto;
 }
@@ -47,12 +47,13 @@ header{
 }
 header .logo{
     margin:0;
-    padding: 25px 30px;
+    padding: 25px 50px ;
+    text-align: left;
     font-weight: bold;
     color:#4AB4DD;
     font-size: 1.6em;
 }
-header .container{
+header .container_index{
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -79,7 +80,7 @@ header a:hover{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 90vh;
+    height: 100vh;
     color: white;
     
 
@@ -101,7 +102,7 @@ header a:hover{
     font-size:5em;
 }
 
-#Signup .container{
+#Signup .container_index{
     text-align: center;
     padding: 200px 12px;
 }
@@ -111,7 +112,7 @@ header a:hover{
     text-align: center;
 }
 
-#nuestrosProductos .container{
+#nuestrosProductos .container_index{
     padding: 150px 12px;
 }
 #nuestrosProductos h2{
@@ -192,7 +193,7 @@ header a:hover{
 
     
 
-.container img{
+.container_index img{
     width: 20px;
     height: 20px;
 }
@@ -205,11 +206,298 @@ footer p{
     
     color:rgb(100,100,100)
 }
-footer .container{
-    height:150px;
+
+@media (min-width: 720px){
+    header{
+        position:fixed;
+        width:100%;
+    }
+    header .container_index{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right:20px;
+    }
+    #Signup .container_index{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #Signup .texto{
+       width: 50%;
+       max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #Signup .texto2{
+        width: 50%;
+        max-width: 600px;
+         text-align: initial;
+         padding: 0px 30px;
+         display:flex;
+         flex-direction: column;
+         justify-content: center;
+     }
+    #Signup h2{
+        margin-top: 0px;
+    }
+    #Signup .img-container{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(/media/Setup.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+
+    }
+    #Signup .img-container-coding{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(/media/coding.png);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+
+    }
+    #Signup .img-container-gaming{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(/media/gaming.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+
+    }
+    #Signup .img-container-desing{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(/media/design_foto.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+
+    }
+    #Signup .img-container-rendering{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(/media/pc_rendering.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+
+    }
+    #Signup .img-container-office{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(/media/pc\ oficina.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+
+    }
+    #Signup .img-container-other{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(/media/other_pc.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+
+    }
+    
+    
+    #nuestrosProductos .productos{
+        display: flex;
+        justify-content: center;
+
+    }
+    #caracteristicas .container_index{
+        display:flex;
+    }
+    #nuestrosProductos p{
+        display: block;
+        margin-bottom:30 px;
+    }
+    #nuestrosProductos h3{
+        margin-top: 0;
+    }
+}
+
+.container_index .garantia{
+    height: 500px;
+    width: 500px;
+    left: 50%;
+   
+}
+footer{
+    width: 100%;
+    background-color: rgb(30, 30, 30);
+    color: #fff;
+    padding: 50px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.row_footer{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col_footer{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.col_footer:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
+}
+.footer_logo{
+    width: 100px;
+    position: relative;
+    top: -23px;
+    left: 20px;
+}
+.footer_about{
+    position: relative;
+    top: -23px;
+}
+.col_footer h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+.footer_email{
+    width: fit-content;
+    border-bottom: 1px solid #4AB4DD;
+    margin: 20px 0;
+}
+.col_footer ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+.col_footer ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.col_footer form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #4AB4DD;
+    margin-bottom: 50px;
+}
+.col_footer form .icon{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.col_footer form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+.col_footer form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.col_footer form button .icon_right{
+    font-size: 16px;
+    color: #ccc;
+}
+.col_footer .social_icons .social_icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    background: #4AB4DD;
+    margin-right: 15px;
+    padding: 5px;
+    cursor: pointer;
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+footer .copyright{
+    text-align: center;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+/*===========================NAV BAR=========*/
+.barNav{
+    max-width: 1400px;
+    margin:auto;
+}
+header .barNav{
     display:flex;
-    justify-content: center;
-    align-items:flex-end
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding:5px 12px;
+    text-decoration:none;
+    font-weight: bold;
+    color:black;
+}
+
+
+header a:hover{
+    color:#4AB4DD;
+}
+#Signup .barNav{
+    text-align: center;
+    padding: 200px 12px;
+}
+.barNav img{
+    width: 20px;
+    height: 20px;
 }
 @media (min-width: 720px){
     header{
@@ -263,140 +551,6 @@ footer .container{
     width: 400px;
 
     }
-    
-    
-    #nuestrosProductos .productos{
-        display: flex;
-        justify-content: center;
-
-    }
-    #caracteristicas .container{
-        display:flex;
-    }
-    #nuestrosProductos p{
-        display: block;
-        margin-bottom:30 px;
-    }
-    #nuestrosProductos h3{
-        margin-top: 0;
-    }
 }
-
-.container .garantia{
-    height: 500px;
-    width: 500px;
-    left: 50%;
-   
-}
-footer{
-    width: 100%;
-    background-color: rgb(30, 30, 30);
-    color: #fff;
-    padding: 50px 0 30px;
-    font-size: 13px;
-    line-height: 20px;
-}
-.row{
-    width: 85%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-.col{
-    flex-basis: 25%;
-    padding: 10px;
-}
-.col:nth-child(2), .col:nth-child(3){
-    flex-basis: 15%;
-}
-.footer_logo{
-    width: 100px;
-    position: relative;
-    top: -23px;
-    left: 20px;
-}
-.footer_about{
-    position: relative;
-    top: -23px;
-}
-.col h3{
-    width: fit-content;
-    margin-bottom: 40px;
-    position: relative;
-}
-.footer_email{
-    width: fit-content;
-    border-bottom: 1px solid #4AB4DD;
-    margin: 20px 0;
-}
-.col ul li{
-    list-style: none;
-    margin-bottom: 12px;
-}
-.col ul li a{
-    text-decoration: none;
-    color: #fff;
-}
-.col form{
-    padding-bottom: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #4AB4DD;
-    margin-bottom: 50px;
-}
-.col form .icon{
-    font-size: 18px;
-    margin-right: 10px;
-}
-.col form input{
-    width: 100%;
-    background: transparent;
-    color: #ccc;
-    border: 0;
-    outline: none;
-}
-.col form button{
-    background: transparent;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-}
-.col form button .icon_right{
-    font-size: 16px;
-    color: #ccc;
-}
-.col .social_icons .social_icon{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    font-size: 20px;
-    color: #fff;
-    background: #4AB4DD;
-    margin-right: 15px;
-    padding: 5px;
-    cursor: pointer;
-}
-hr{
-    width: 90%;
-    border: 0;
-    border-bottom: 1px solid #ccc;
-    margin: 20px auto;
-}
-footer .copyright{
-    text-align: center;
-}
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-  }
-
-
    
 

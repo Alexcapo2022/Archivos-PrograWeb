@@ -10,13 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+     <link rel="shortcut icon" href="/media/tarjeta-grafica.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="barNav">
         
-        <p class="logo">Build your pc!</p>
+        
         <nav class="navbar">
+            <p class="logo">Build your pc!</p>
             <a href="index.html">Home</a>
             <a href="#">About</a>
             <a href="#">Support</a>
@@ -25,7 +27,7 @@
             <a href= "shoppingCar.html" ><img src="/media/carrito-de-compras.png"></a>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-info" type="submit" >Search</button>
+              <button class="btn btn-info" id="index" type="submit" >Search</button>
             </form>
             <a class="perfil" href="login.html"><img src="/media/perfil.png"></a>
         </nav>
@@ -37,14 +39,14 @@
         <h1>Build your PC! <br>Just for what you need! </h1>
         <section id="hero2">
           <a href="/armadoPrincipiantes.html">
-            <button>Build for begginers</button>
+            <button  class="index_button">Build for begginers</button>
           </a>
             
-          <a href="catalogo.html"><button >Advanced building</button></a>
+          <a href="catalogo.html"><button class="index_button" >Advanced building</button></a>
         </section>
     </section>
     <section id="Signup">
-        <div class="container">
+        <div class="container_index">
             
         <div class="img-container"></div>
         <div class="texto"><h2>Sign up to our newsletter <span class="color-acento">for the lastest PC news</span> </h2>
@@ -53,7 +55,7 @@
         </div>
     </section>
     <section id="nuestrosProductos">
-        <div class="container">
+        <div class="container_index">
         <h2>Our Products</h2>
         <div class="productos">
         <div class="carta">
@@ -90,7 +92,7 @@
     </div>
     </section>
     <section id="caracteristicas">
-        <div class="container">
+        <div class="container_index">
           <img src="/media/garantia.jpg" alt="" class="garantia">  
             <div class="img-container">
               
@@ -110,15 +112,13 @@
     </section>
 
     <footer>
-      <div class="row">
-          <div class="col">
+      <div class="row_footer">
+          <div class="col_footer">
             <P style="color: white;font-weight:bold;font: size 5em">Build your pc!</p><img src="/media/tarjeta-grafica.png" class="footer_logo">
-              <p class="footer_about">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore harum molestias nesciunt, 
-                  doloremque magni aspernatur iste blanditiis, fugiat quaerat accusamus ut, vero tempore. 
-                  Fugiat, illum!
+              <p class="footer_about">Project of the course implemented by the students of the prograweb subject of the cycle 2022-2
               </p>
           </div>
-          <div class="col">
+          <div class="col_footer">
               <h3> <div class="bottom_line"><span></span></div></h3>
               <p>correo1@aloe.ulima.edu.pe</p>
               <p>correo2@aloe.ulima.edu.pe</p>
@@ -126,7 +126,7 @@
               <p class="footer_email">20192659@aloe.ulima.edu.pe</p>
               <h4>+51 - 951654412</h4>
           </div>
-          <div class="col">
+          <div class="col_footer">
               <h3>Links <div class="bottom_line"><span></span></div></h3>
               <ul>
                   <li><a href="">HOME</a></li>
@@ -135,7 +135,7 @@
                   <li><a href="">CONTACT US</a></li>
               </ul>
           </div>
-          <div class="col">
+          <div class="col_footer">
               <h3>Newsletter <div class="bottom_line"><span></span></div></h3>
               <form>
                   <ion-icon class="icon" name="mail"></ion-icon>

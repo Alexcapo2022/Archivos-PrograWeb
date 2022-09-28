@@ -35,7 +35,7 @@ body{
 .item{
   margin:3em;
   padding: auto;
-  float:left;
+  
   align-items: center;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
@@ -47,7 +47,7 @@ body{
 .item2{
   margin:3em;
   padding: auto;
-  float:left;
+  
   align-items: center;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
@@ -59,6 +59,15 @@ body{
   
   
   overflow: hidden;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  height: 50vh;
+  margin: auto;
+  padding: auto;
+  
   
   
 }
@@ -87,4 +96,16 @@ h2{
   display: flex;
   height: 10vh;
 }
+.container_parrafo{
+    
+    margin:auto;
+    height: 15vh;
+    font-family: 'Montserrat', sans-serif;
+    color: #4AB4DD;
+
+
+}
+
+
+
 
