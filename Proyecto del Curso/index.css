@@ -552,5 +552,55 @@ header a:hover{
 
     }
 }
+.CONTACTO{
+    color: white;
+}
+.submenu{
+	position: absolute;
+	background: #333333;
+	width: 150px;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 15px;
+	color: #353535;
+    font-size: 18px;
+    
+	
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #4AB4DD;
+	transition: all .3s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
    
 

@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#bla" />
+  <link rel="shortcut icon" href="/media/tarjeta-grafica.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <title>Coding</title>
+
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="/index.css" />
+
+
+</head>
+
+<body>
+  
+    
+  
+  <header class="container-fluid bg-dark position-sticky top-0">
+    <div class="barNav">
+    
+    
+      <nav class="navbar">
+          <p class="logo">Build your pc!</p>
+          <a style="color: white" href="/index.html">Home</a>
+          <a style="color: white" href="#">About</a>
+          <a style="color: white" href="#">Support</a>
+          <a style="color: white" href="#">Reviews</a>
+          <a style="color: white" href="/ranking.html">Ranking</a>
+          <a href= "/shoppingCar.html" ><img src="/media/carrito-de-compras.png"></a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-info" type="submit" >Search</button>
+          </form>
+          <a class="perfil" href="/login.html"><img src="/media/perfil.png"></a>
+      </nav>
+  
+      </div>
+    <ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist">
+      <li class="nav-item text-light" role="presentation">
+        <a style="color: white" class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+          type="button" role="tab" aria-controls="pills-home" aria-selected="true" href="index.html">Preview</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a style="color: white"class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+          type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Build you own PC!</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a style="color: white"class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button"
+          role="tab" aria-controls="pills-contact" aria-selected="false">View prices</a>
+      </li>
+    </ul>
+  </header>
+
+  <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+    Product Added to cart!
+  </div>
+  <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+    Product removed!
+  </div>
+
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+      
+      <section id="Signup">
+        <div class="container_index">
+
+          <div class="img-container-coding"></div>
+          <div class="texto">
+            <h2 style="color: white">Sign up to our newsletter <span class="color-acento">for the lastest PC news</span>
+            </h2>
+            <p style="color: white">Buy PC parts to build your own computer or upgrade your current system. Whether you
+              need a CPU, GPU, or motherboard, Micro Center is your trusted source for computer parts and accessories to
+              take your build to the next level. </p>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <div class="tab-pane fade show active container" id="pills-profile" role="tabpanel"
+      aria-labelledby="pills-profile-tab">
+
+      <h2 class="h4 m-4 text" style="color:#4AB4DD">Products</h2>
+      <div class="botones">
+        <ul class="nav nav-pills mb-7" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button style="color: white;"class="nav-link" id="pills-CPU-tab" data-bs-toggle="pill" data-bs-target="#pills-CPU"
+              type="button" role="tab" aria-controls="pills-CPU" aria-selected="false">Graphics</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button style="color: white;"class="nav-link" id="pills-Processor-tab" data-bs-toggle="pill" data-bs-target="#pills-Processor"
+              type="button" role="tab" aria-controls="pills-Processor" aria-selected="false" >Processor</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button style="color: white;"class="nav-link" id="pills-Memory-tab" data-bs-toggle="pill" data-bs-target="#pills-Memory"
+              type="button" role="tab" aria-controls="pills-Memory" aria-selected="false">Memory</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button style="color: white;"class="nav-link" id="pills-Storage-tab" data-bs-toggle="pill" data-bs-target="#pills-Storage"
+              type="button" role="tab" aria-controls="pills-Storage" aria-selected="false" >Storage</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button style="color: white;"class="nav-link" id="pills-Cooler-tab" data-bs-toggle="pill" data-bs-target="#pills-Cooler"
+              type="button" role="tab" aria-controls="pills-Cooler" aria-selected="false">Cooler</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button style="color: white;"class="nav-link" id="pills-Windows-tab" data-bs-toggle="pill" data-bs-target="#pills-Windows"
+              type="button" role="tab" aria-controls="pills-Windows" aria-selected="false" >Windows</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button style="color: white;"class="nav-link" id="pills-PowerS-tab" data-bs-toggle="pill" data-bs-target="#pills-PowerS"
+              type="button" role="tab" aria-controls="pills-PowerS" aria-selected="false" >Power Supply</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade" id="pills-CPU" role="tabpanel" aria-labelledby="pills-CPU-tab"
+            tabindex="0"><div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">GEOFORCE RTX 3070 8GB</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/NVDIA GEOFORCE RTX 3070 8GB.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 300</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">GEFORCE GTX 1660MSI</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Coding/GEFORCE GTX 1660MSI.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 560</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">GEFORCE RTX 2070 SUPER</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Design/GEFORCE RTX 2070 SUPER.png" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 45</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">GTX 750 TI</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Office/GTX 750 TI.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD" class="text" style="color:#4AB4DD">Price: <span class="precio">$
+                        150</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">GEFORCE RTX 2070</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Other/GEFORCE RTX 2070.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 110</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">GTX 1650 SUPER</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/GTX 1650 SUPER.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 120</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">/GTX 1070</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/GTX 1070.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 350</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">RTX 3080</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/RTX 3080.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 80</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <!-- INCIO DEL BOTON 2-->
+          <div class="tab-pane fade" id="pills-Processor" role="tabpanel" aria-labelledby="pills-Processor-tab"
+            tabindex="0"><div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">INTEL CORE I7 12700K</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Design/INTEL CORE I7 12700K.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 300</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">INTEL-CORE-I9-10900</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/INTEL-CORE-I9-10900.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 560</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">INTEL CORE I5</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Office/procesador-intel-core-i5-10400.jpg" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 45</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">INTEL CORE I3</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/i3-10-generacion.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD" class="text" style="color:#4AB4DD">Price: <span class="precio">$
+                        150</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">RYZEN 3</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/RYZEN 3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 110</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">RYZEN 5</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/RYZEN 5.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 120</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">RYZEN 7</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Other/AMD RYZEN 3700X.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 350</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">INTEL I7-8700</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/INTEL I7-8700.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 80</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- INCIO DEL BOTON 3-->
+            <div class="tab-pane fade" id="pills-Memory" role="tabpanel" aria-labelledby="pills-Memory-tab"
+            tabindex="0"><div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">16GB DDR4 DUAL CHANNEL</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/16GB DDR4 DUAL CHANNEL.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 29</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">8GB RAM HyperX</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Office/8GB RAM.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 79</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">16GB RAM HyperX</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Office/16GB RAM.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 29</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">DDR4 CORSAIR 16GB</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/DDR4 CORSAIR 16GB.jpg" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 99</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">T-FORCE 16GB RAM</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/T-FORCE 16GB RAM.jpg" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 99</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">DDR4 KIGNSTON FURY 16GB</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/DDR4 KIGNSTON FURY 16GB.jpg" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 99</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">32GB RAM BALLISTIX</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/32GB RAM BALLISTIX.jpg" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 99</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">DDR KINGSTON 8GB RGB</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/DDR KINGSTON 8GB RGB.jpg" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 99</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+      
+      
+            </div>
+          </div>
+            <!-- INCIO DEL BOTON 4-->
+          <div class="tab-pane fade" id="pills-Storage" role="tabpanel" aria-labelledby="pills-Storage-tab"
+            tabindex="0"><div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">SSD KINGSTON</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Coding/SSD KINGSTON.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 29</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">1TB NVME M.2</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/1TB NVME M.2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 79</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">M2 500GB</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Coding/M2 500GB.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 29</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">4TB EXTERNAL DISC</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Other/18420288_1.jfif" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 99</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">SSD M2 250GB</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/SSD 250GB.jpg" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 99</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">NVMe M2 2TB</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/NVMe M2 2TB.jpg" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 99</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">HDD 4TB</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/HDD 4TB.jpg" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 99</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">HDD 1TB</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/HDD 1TB.jpg" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 99</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+      
+      
+            </div>
+          </div>
+          <!-- INCIO DEL BOTON 5-->
+        <div class="tab-pane fade" id="pills-Cooler" role="tabpanel" aria-labelledby="pills-Cooler-tab"
+            tabindex="0"><div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">LÍQUIDA-ANTRYX-TRITON-120</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/LÍQUIDA-ANTRYX-TRITON-120-ARGB.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 29</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">QTX 4X CM COOLERMASTER</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/QTX 4X CM COOLERMASTER RGB.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 79</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">Game MAX COOLER</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Rendering/Sistema-de-Enfriamiento-Iceberg-TIENDAS-TEC.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 29</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">COOLER CORSAIR</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Office/fan ventilador.jpg" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 99</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+     <!-- INCIO DEL BOTON 6-->
+        <div class="tab-pane fade" id="pills-Windows" role="tabpanel" aria-labelledby="pills-Windows-tab"
+            tabindex="0"><div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">WINDOWS 11 HOME</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/windows-11-home.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 29</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">WINDOWS 10 PRO OEM</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Other/10-Pro-OEM.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 79</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">WINDOWS 10 PRO</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/WIndows 10 pro.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 29</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">WINDOWS 10 PROFESSIONAL</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/WINDOWS 10 PROFESSIONAL.jpg" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 99</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- INCIO DEL BOTON 7-->
+        <div class="tab-pane fade" id="pills-PowerS" role="tabpanel" aria-labelledby="pills-PowerS-tab"
+            tabindex="0"><div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">700W ATX 80 PLUS GOLD</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/700W ATX 80 PLUS GOLD.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 29</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">TEROS ATX450W</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Design/TEROS ATX450W.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 79</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">HALION ATX 600W</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/HALION ATX 600W.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 29</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center" style="color:#4AB4DD">ROG STRIX 1000W</h5>
+                  <img src="/Build Begginers/INTERFACES/img/Gamer/ROG STRIX 1000W.jpg" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+      
+                    <h5 class="text" style="color:#4AB4DD">Price: <span class="precio">$ 99</span></h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn button" style="background-color:#4AB4DD;color: white">Add to car</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    
+
+      
+
+    </div>
+    <div class="tab-pane fade carrito" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+      <br>
+      <table class="table table-dark table-hover">
+        <thead>
+          <tr class="text" style="color:#4AB4DD">
+            <th scope="col">#</th>
+            <th scope="col">Products</th>
+            <th scope="col">Price</th>
+            <th scope="col">Number</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+
+
+
+        </tbody>
+      </table>
+      <br><br>
+      <div class="row mx-4">
+        <div class="col">
+          <h3 class="itemCartTotal text-white">Total: 0</h3>
+        </div>
+        <div class="col d-flex justify-content-end">
+          <button class="btn btn-success" style="width: 100px">BUY</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <footer>
+    <div class="row_footer">
+      <div class="col_footer">
+        <P style="color: white;font-weight:bold;font: size 5em">Build your pc!</p><img src="/media/tarjeta-grafica.png"
+          class="footer_logo">
+        <p class="footer_about">Project of the course implemented by the students of the prograweb subject of the cycle
+          2022-2
+        </p>
+      </div>
+      <div class="col_footer">
+        <h3>
+          <div class="bottom_line"><span></span></div>
+        </h3>
+        <p>correo1@aloe.ulima.edu.pe</p>
+        <p>correo2@aloe.ulima.edu.pe</p>
+        <p>correo3@aloe.ulima.edu.pe</p>
+        <p class="footer_email">20192659@aloe.ulima.edu.pe</p>
+        <h4>+51 - 951654412</h4>
+      </div>
+      <div class="col_footer">
+        <h3>Links <div class="bottom_line"><span></span></div>
+        </h3>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">SERVICE</a></li>
+          <li><a href="">CONTACT US</a></li>
+        </ul>
+      </div>
+      <div class="col_footer">
+        <h3>Newsletter <div class="bottom_line"><span></span></div>
+        </h3>
+        <form>
+          <ion-icon class="icon" name="mail"></ion-icon>
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">
+            <ion-icon class="icon_right" name="arrow-round-forward"></ion-icon>
+          </button>
+        </form>
+        <div class="social_icons">
+          <ion-icon class="social_icon" name="logo-facebook"></ion-icon>
+          <ion-icon class="social_icon" name="logo-whatsapp"></ion-icon>
+          <ion-icon class="social_icon" name="logo-twitter"></ion-icon>
+          <ion-icon class="social_icon" name="logo-instagram"></ion-icon>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">Build your pc! Ⓒ 2022 - All Rights Reserved</p>
+  </footer>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+  <script src="./js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Acount</title>
+    <link rel="stylesheet" href="edit.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+     
+</head>
+<div class="wrapper bg-white mt-sm-5">
+    <h4 class="pb-4 border-bottom">Editar Perfil</h4>
+    <div id="logo"class="d-flex align-items-start py-3 border-bottom">
+        <img src="logousuario.png"class="img" alt="">
+    </div>
+    <b>Foto de perfil</b>
+    <div >
+        <button id="btn-sub" type="button"class="btn btn-outline-secondary btn-sm btn-block "><a id="subir">Upload</a></button>
+    </div>
+    <div class="py-2">
+        <div class="row py-2">
+            <div class="col-md-6">
+                <label for="firstname">Nombre</label>
+                <input type="text" class="bg-light form-control" placeholder="Name">
+            </div>
+            <div class="col-md-6 pt-md-0 pt-3">
+                <label for="username">Usuario</label>
+                <input type="text" class="bg-light form-control" placeholder="Username">
+            </div>
+        </div>
+        <div class="row py-2">
+            <div class="col-md-6">
+                <label for="email">Correo electronico</label>
+                <input type="text" class="bg-light form-control" placeholder="user@email.com">
+            </div>
+            <div class="col-md-6 pt-md-0 pt-3">
+                <label for="phone">Numero de telefono</label>
+                <input type="tel" class="bg-light form-control" placeholder="+51">
+            </div>
+        </div>
+        <div class="row py-2">
+            <div class="col-md-6">
+                <label for="country">Pais</label>
+                <select name="country" id="country" class="bg-light">
+                    <option value="india" selected>Peru</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">Brasil</option>
+                    <option value="uae">Mexico</option>
+                </select>
+            </div>
+            <div class="col-md-6 pt-md-0 pt-3" id="lang">
+                <label for="language">Idioma</label>
+                <div class="arrow">
+                    <select name="language" id="language" class="bg-light">
+                        <option value="english" selected>English</option>
+                        <option value="english_us">Español</option>
+                        <option value="enguk">Italiano</option>
+                        <option value="arab">Catalan</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div >
+            <button type="button" class="btn btn-outline-primary">Guardar cambios</button>
+            <button type="button"class="btn btn-outline-secondary">Cancelar</button>
+        </div>
+        <div class="d-sm-flex align-items-center pt-3" id="deactivate">
+            <div>
+                <a>Desactivar cuenta</a>
+                <p>Detalles de la cuenta y contraseña</p>
+            </div>
+        </div>
+            <button class="btn danger btn-primary">Desactivar</button>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
