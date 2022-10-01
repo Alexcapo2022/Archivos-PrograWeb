@@ -25,23 +25,39 @@
   <body>
     <header class="container-fluid bg-dark position-sticky top-0">
       <div class="barNav">
-    
-    
-        <nav class="navbar">
-            <p class="logo">Build your pc!</p>
-            <a style="color: white" href="/index.html">Home</a>
-            <a style="color: white" href="#">About</a>
-            <a style="color: white" href="#">Support</a>
-            <a style="color: white" href="#">Reviews</a>
-            <a style="color: white" href="/ranking.html">Ranking</a>
-            <a href= "/shoppingCar.html" ><img src="/media/carrito-de-compras.png"></a>
-            <form class="d-flex" role="search">
+        
+        
+        <nav class="navbar" >
+            
+            <ul class="menu">
+            <li><p class="logo">Build your pc!</p></li>
+            <li ><a id="compra" href="/index.html">Home</a></li>
+            <li><a id="compra" href="#">About</a></li>
+            <li><a  id="compra" href="/support.html">Support</a></li>
+              <li><a  id="compra" href="#">Reviews</a></li>
+              <li><a id="compra" href="/ranking.html">Ranking</a></li>
+              <li><a id="compra" href="/CAR.html"><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="/media/carrito-de-compras.png" width="30" height="30"/></button></a></li>
+            <li><form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-info" type="submit" >Search</button>
-            </form>
-            <a class="perfil" href="/login.html"><img src="/media/perfil.png"></a>
+              <button class="btn btn-info" id="index" type="submit" >Search</button>
+            </form></li>
+            <li> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="/media/logousuario.png" width="30" height="30"/>
+                <ul class="submenu">
+                  <li><a href="/login.html">Login</a></li>
+                  <li><a href="/edit/editarPerfil.html">Informacion de Usuario</a></li>
+                  <li><a href="#">Historial de compra</a></li>
+                  <li><a href="#">Log out</a></li>
+                  
+                </ul>
+              </li>
+              </ul>
+              </nav>
+              </div>
+              </button>
         </nav>
-    
+
         </div>
       <ul
         class="nav nav-pills mb-3 py-3 container"
@@ -297,9 +313,9 @@
         <thead>
           <tr class="text" style="color:#4AB4DD">
             <th scope="col">#</th>
-            <th scope="col">Productos</th>
-            <th scope="col">Precio</th>
-            <th scope="col">Cantidad</th>
+            <th scope="col">Products</th>
+            <th scope="col">Price</th>
+            <th scope="col">Number</th>
           </tr>
         </thead>
         <tbody class="tbody">
@@ -314,7 +330,7 @@
           <h3 class="itemCartTotal text-white">Total: 0</h3>
         </div>
         <div class="col d-flex justify-content-end">
-          <button class="btn btn-success">COMPRAR</button>
+          <a href="/CAR.html"><button  class="btn button" style="background-color:#4AB4DD;color: white">VIEW CAR</button></a>
         </div>
       </div>
       

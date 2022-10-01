@@ -21,24 +21,39 @@
         
         
         <nav class="navbar">
-            <p class="logo">Build your pc!</p>
-            <a href="index.html">Home</a>
-            <a href="#">About</a>
-            <a href="/support.html">Support</a>
-            <a href="#">Reviews</a>
-            <a href="ranking.html">Ranking</a>
-            <a href= "/shoppingCar.html" ><img src="/media/carrito-de-compras.png"></a>
-            <form class="d-flex" role="search">
+            
+            <ul class="menu">
+            <li><p class="logo">Build your pc!</p></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="/support.html">Support</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="ranking.html">Ranking</a></li>
+              <li><a href="/CAR.html"><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="/media/carrito-de-compras.png" width="30" height="30"/></button></a></li>
+            <li><form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-info" id="index" type="submit" >Search</button>
-            </form>
-            <a class="perfil" href="login.html"><img src="/media/perfil.png"></a>
+            </form></li>
+            <li> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="/media/logousuario.png" width="30" height="30"/>
+                <ul class="submenu">
+                <li><a href="/login.html">Login</a></li>
+                  <li><a href="/edit/editarPerfil.html">Informacion de Usuario</a></li>
+                  <li><a href="#">Historial de compra</a></li>
+                  <li><a href="#">Log out</a></li>
+                </ul>
+              </li>
+              </ul>
+              </nav>
+              </div>
+              </button>
         </nav>
 
         </div>
     </header>
     
-    <div style="height: 100px;">
+    <div style="height: 150px;">
         
     </div>
     <div class="support" style="text-align: center">
@@ -70,7 +85,9 @@
         </div>
     </div>
 </div>
-
+<div style="height: 150px;">
+        
+</div>
     <footer>
         <div class="row_footer">
             <div class="col_footer">
