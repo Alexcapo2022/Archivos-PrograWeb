@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+header{
+  position: initial;
+  display: flex;
+}
+
 html, body{
   margin: 0;
   padding: 0;
@@ -74,11 +79,6 @@ body{
 .card-img-top{
   width: 250px;
   height: 250px;
-}
-
-
-#item1{
-  
 }
 
 
