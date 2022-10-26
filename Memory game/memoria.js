@@ -18,30 +18,30 @@ let mostrarTiempo = document.getElementById('t-restante');
 
 //Generando numeros aleaotorios
 let numeros =[1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12];
-numeros.splice(0,1,'🐶')//cambia valores en un arreglo 
-numeros.splice(1,1,'🐶')
-numeros.splice(2,2,'🐱')
-numeros.splice(3,2,'🐱')
-numeros.splice(4,3,'🐭')
-numeros.splice(5,3,'🐭')
-numeros.splice(6,4,'🐯')
-numeros.splice(7,4,'🐯')
-numeros.splice(8,5,'🐸')
-numeros.splice(9,5,'🐸')
-numeros.splice(10,6,'🐮')
-numeros.splice(11,6,'🐮')
-numeros.splice(12,7,'🐵')
-numeros.splice(13,7,'🐵')
-numeros.splice(14,8,'🐷')
-numeros.splice(15,8,'🐷')
-numeros.splice(16,9,'🐦')
-numeros.splice(17,9,'🐦')
-numeros.splice(18,10,'🦍')
-numeros.splice(19,10,'🦍')
-numeros.splice(20,11,'🐟')
-numeros.splice(21,11,'🐟')
-numeros.splice(22,12,'🦁')
-numeros.splice(23,12,'🦁')
+numeros.splice(0,1,'💻')//cambia valores en un arreglo 
+numeros.splice(1,1,'💻')
+numeros.splice(2,2,'⌨')
+numeros.splice(3,2,'⌨')
+numeros.splice(4,3,'🖥')
+numeros.splice(5,3,'🖥')
+numeros.splice(6,4,'🎧')
+numeros.splice(7,4,'🎧')
+numeros.splice(8,5,'💾')
+numeros.splice(9,5,'💾')
+numeros.splice(10,6,'🔌')
+numeros.splice(11,6,'🔌')
+numeros.splice(12,7,'📁')
+numeros.splice(13,7,'📁')
+numeros.splice(14,8,'🎯')
+numeros.splice(15,8,'🎯')
+numeros.splice(16,9,'🎮')
+numeros.splice(17,9,'🎮')
+numeros.splice(18,10,'⌚')
+numeros.splice(19,10,'⌚')
+numeros.splice(20,11,'🛒')
+numeros.splice(21,11,'🛒')
+numeros.splice(22,12,'💵')
+numeros.splice(23,12,'💵')
 
 numeros = numeros.sort(()=>{return Math.random()-0.5})//SORT:ordena los numeros respecto a la funcion
 let board; //global
@@ -109,7 +109,7 @@ function destapar(id){
 
             if(aciertos == 12){
                 clearInterval(tiempoRegresivoid);
-                mostrarAciertos.innerHTML = `Aciertos: ${aciertos} 😳`;
+                mostrarAciertos.innerHTML = `Aciertos: ${aciertos}, GANASTE UN DSCTO DEL 20% , COD:#12345`;
                 mostrarTiempo.innerHTML = `Fantastico!📣 Solo demoraste ${timerInicial - timer} segundos`;
                 mostrarMovientos.innerHTML = `Movimientos: ${movimientos} 🤟😎`;
                 
